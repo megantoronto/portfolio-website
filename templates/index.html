@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+
+
+
+    <div class="row" id="video-container">
+        <video autoplay muted loop>
+            <source src="static/img/ocean-crop2.mp4" type="video/mp4" />
+        </video>
+         
+        <div class="row-video">
+            <h1 class="header">Welcome</h1>
+            <p class="centered-text">My name is Megan Toronto. I love all things data.</p>
+            <p class="centered-text">I started my career in finance as an investment analyst. In that role, 
+                I discovered a passion for programming, dashboard building, and data analysis.
+            </p>
+            <p class="centered-text">I decided I wanted to professionalize my skillset and pursue a career working with data.</p>
+            <p class="centered-text">I started the Master of Analytics through Georgia Tech in January 2020.</p>
+            <p class="centered-text">The program is expanding my knowledge of machine learning, advanced data visualization, web development, and cloud computing.
+            </p>
+        </div>
+    </div>
+
+    
+
+    <div class="container-2">
+        <div class="column-2">
+            <p class="centered-text" style='font-weight: bold; margin-bottom: 0;'>Click to see my projects</p>
+            <button type="button" class="btn btn-black btn-lg" onClick="window.open( '/portfolio','_top');">
+                Portfolio   
+              </button>
+        </div>
+         
+        <div class="column-2">
+            <p class="centered-text" style='font-weight: bold; margin-bottom: 0;'>Click to see my experience</p>
+            <button type="button" class="btn btn-black btn-lg" onClick="window.open( '/resume','_top');">
+                Resume   
+              </button>
+        </div>
+    </div>
+
+
+{% endblock %}

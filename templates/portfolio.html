@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+    <h1>Portfolio</h1>
+    <div class="portfolio-row">
+        <div class="portfolio-column">
+            <h3>Out of the Music Box</h3>
+            <p>Out of the Music Box is a music recommendation system.</p>
+            <p><b>Skills:</b> Python, Flask, JavaScript, HTML, CSS</p>
+            <a href="https://out-of-the-music-box.herokuapp.com/" target="_blank">
+                <img class="portfolio-img" src="static\img\music_box_r.png">
+            </a>
+        <div class="portfolio-row">
+            <button type="button" class="btn btn-portfolio btn-md" onClick="window.open( 'https://out-of-the-music-box.herokuapp.com/','_blank');">
+                App   
+              </button>
+              <button type="button" class="btn btn-portfolio btn-md" onClick="window.open( 'https://github.com/megantoronto/out-of-the-music-box','_blank');">
+                Code  
+              </button>
+
+            </div>
+            
+            
+        </div>
+        <div class="portfolio-column">
+            <h3>Crossfit Open Part 1: Scraping the Data</h3>
+            <p>See how I scraped, and cleaned 10 years of Crossfit Open Data.</p>
+            <p><b>Skills:</b> Python, Web Scraping</p>
+            <a href="https://github.com/megantoronto/crossfit-open/blob/main/crossfit_open_part_1.ipynb" target="_blank">
+                <img class="portfolio-img" src="static\img\crossfit_r.png">
+            </a>
+        
+        <div class="portfolio-row">
+              <button type="button" class="btn btn-portfolio btn-md" onClick="window.open( 'https://github.com/megantoronto/crossfit-open/blob/main/crossfit_open_part_1.ipynb','_blank');">
+                Code  
+              </button>
+
+            </div>
+        </div>
+        <div class="portfolio-row">
+        <div class="portfolio-column">
+            <h3>Crossfit Open Part 2: Loading the Data into PostgreSQL</h3>
+            <p>See how I created a PostgreSQL database for the CrossFit Open data I scraped.</p>
+            <p><b>Skills:</b> Python, PostgreSQL</p>
+            <a href="https://github.com/megantoronto/crossfit-open" target="_blank">
+                <img class="portfolio-img" src="static\img\crossfit_r.png">
+            </a>
+            <div class="portfolio-row">
+                <button type="button" class="btn btn-portfolio btn-md" onClick="window.open( 'https://github.com/megantoronto/crossfit-open','_blank');">
+                  Code  
+                </button>
+  
+              </div>
+        </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,379 @@
+/* General Styling */
+
+html {
+    height:100%;
+    width: 100%;
+}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+h1 {
+    text-align: center;
+}
+.centered-text {
+    text-align:center;
+    font-size: 24px;
+    padding-bottom: 5px;
+}  
+ 
+/* Navbar Styling */
+.navbar-custom{
+    background-color: lightslategray;
+}
+
+.navbar-custom .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-custom .navbar-brand{
+    color: white;
+}
+
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  border-color: white;
+}
+.navbar-toggler .line{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Index Styling */
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4vw;
+    margin:0px;
+  }
+
+  .row-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+  }
+
+  .row-1{
+      width: 100%;
+  }
+
+
+  .column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: white;
+    height:100%;
+  }
+  
+  .column-2 {
+    float: left;
+    width: 50%;
+    text-align: center;
+    
+  }
+
+  /* Clear floats after the columns */
+  .row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row-2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #video-container {
+    height: calc(100vh - 282px);
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}  
+
+video {
+  min-width: 75%;
+  min-height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.header{
+  font-size: 72px;
+  color: white;
+} 
+
+.container-2{
+  width:100%;
+  padding:16px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-black{
+  background: transparent;
+  border-color: black;
+  margin-bottom: 10px;  
+}
+.btn-black:hover{
+  background-color:black;
+  color: white;
+}
+
+.row-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  color: white;
+}
+
+  /* Portfolio Styling */
+
+  .portfolio-column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .portfolio-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .portfolio-img{
+    max-width:100%; 
+    height:auto; 
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 5px 5px 5px 5px;
+  }
+  .btn-portfolio{
+    background: transparent;
+    border-color: black;
+    margin: 10px;  
+    display: table-cell;
+  
+  }
+  .btn-portfolio:hover{
+    background-color:black;
+    color: white;
+  }
+
+
+  /* Screen Size Styling */
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+
+    .header{
+        font-size: 36px;
+        margin-bottom: 2px;
+    }
+
+    .centered-text{
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    #video-container {
+      height: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  }  
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }
+
+    .portfolio-column{
+      width: 100%
+    }
+
+    .header{
+        font-size: 36px;
+        margin-bottom: 2px;
+    }
+
+    .centered-text{
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    #video-container {
+      height: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  }  
+
+  }
+
+  /* Footer & Icon Styling */
+
+  footer{
+      background-color: lightslategrey;
+      color: white;
+  }
+
+  .social {
+    text-align: center;
+  }
+  
+  .social ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding:0;
+  }
+  
+  .social li {
+    display: inline;
+    list-style-type: none;
+  }
+
+  /** Email **/
+  
+  .email {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .email .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.3);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .email .border:hover {
+    background: #DB4437;
+    border-color: #DB4437;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-email {
+    font-size: 25px;
+  }
+  
+  
+  /** Linkedin **/
+  
+  .linkedin {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .linkedin .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.3);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .linkedin .border:hover {
+    background: #007bb5;
+    border-color: #007bb5;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-linkedin {
+    font-size: 25px;
+  }
+  
+  /** Github **/
+  
+  .github {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .github .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.3);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .github .border:hover {
+    background: #24292e;
+    border-color: #24292e;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-github {
+    font-size: 25px;
+  }
+  
+  .social ul li {
+    transition: ease .3s;
+  }
+  
+  .social ul:hover > li {
+    opacity: 0.5;
+  }
+  
+  .social ul:hover > li:hover {
+    opacity: 1;
+  }
+
+ 
+  
+
+    
+
+
+  
