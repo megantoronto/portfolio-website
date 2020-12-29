@@ -242,6 +242,36 @@ video {
 
   }
 
+  @media screen and (max-height: 927px) {
+    .column {
+      width: 100%;
+    }
+
+    .portfolio-column{
+      width: 100%
+    }
+
+    .header{
+        font-size: 48px;
+        margin-bottom: 2px;
+    }
+
+    .centered-text{
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+
+    #video-container {
+      height: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  }  
+
+  }
+
   /* Footer & Icon Styling */
 
   footer{

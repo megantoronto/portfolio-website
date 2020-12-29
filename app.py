@@ -20,6 +20,13 @@ def portfolio():
 def resume():
     return render_template('resume.html')
 
+@app.before_request
+def enforceHttpsInHeroku():
+  if request.headers.get('X-Forwarded-Proto') == 'http':
+      url = request.url.replace('http://', 'https://', 1)
+      code = 301
+      return redirect(url, code=code)
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port,debug=True)
